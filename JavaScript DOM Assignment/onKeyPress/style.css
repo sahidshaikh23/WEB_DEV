@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9ec8e3;
+    flex-direction: column;
+    gap: 50px;
+}
+div{
+    height: 300px;
+    width: 300px;
+    background-color: #00ff1e;
+    border: 10px solid #000000;
+    border-radius: 20px;
+}

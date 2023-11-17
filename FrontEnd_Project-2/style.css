@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: "Red Rose", cursive;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/pexels-maxyne-barcel-10402282\ 1.png");
+    font-family: "Red Rose", cursive;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ______________________________ */
+/* Header / Navigaton Bar */
+/* _____________________________ */
+nav{
+    padding: 0px 60px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav div img{
+    cursor: pointer;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    line-height: 22px;
+    align-items: center;
+    gap: 63px;
+    font-weight: 400;
+}
+nav ul li a{
+    font-family: "Red Rose";
+    cursor: pointer;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffc233;
+}
+.nav_button{
+    align-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    font-family: "Red Rose";
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ff505f;
+    padding: 12px 40px;
+}
+
+/* _______________________ */
+/* Main */
+/* _______________________ */
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}  */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 119px;
+}
+main div{
+    text-align: center;
+}
+main div h1 {
+    font-family: "Dela Gothic One", cursive;
+    font-size: 104px;
+    line-height: 114px;
+    color: #ffc233;
+    font-weight: 400;
+}
+main button{
+    background-color: #ff505f;
+    border: none;
+    color: #ffffff;
+    font-family: "Red Rose";
+    padding: 24px 56px;
+    margin-top: 64px;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+/* ________________ */
+/* Footer */
+/* ________________ */
+
+footer{
+    display: flex;
+    flex-flow: row-reverse;
+    margin: 20px 50px;
+}

@@ -1,0 +1,30 @@
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a38b8b;
+}
+#out{
+    height: 400px;
+    width: 400px;
+    background-color: #fff711;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#in{
+    height: 150px;
+    width: 150px;
+    background-color: #44ff00;
+    border: 3px solid #000000;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
