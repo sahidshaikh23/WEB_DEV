@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111827;
+}
+nav{
+    margin-top: 20px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.hambg{
+    width: 20px;
+    display: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    list-style: none;
+}
+.nav-link{
+    color: #ffffff;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    background-color: #0000ff;
+    border-radius: 20px;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 8px;
+}
+header div h1{
+    font-weight: 400;
+    line-height: 25px;
+}
+.bold_words{
+    font-size: 45px;
+    font-weight: 600;
+}
+.light_words{
+    line-height: 50px;
+    color: #99B524;
+    font-weight: 500;
+}
+.image_1{
+    height: 25px;
+    width: 25px;
+}
+.image_2{
+    height: 500px;
+    width: 500px;
+}
+
+/* Main  */
+main{
+    margin-top:50px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    color: #ffffff;
+    line-height: 35px;
+    text-decoration: underline blue 5px;
+}
+.image_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+.image_container div{
+    text-align: center;
+}
+.image{
+    height: 250px;
+    width: 250px;
+}
+/* Footer */
+footer{
+    margin: 50px 0 0 0; 
+    text-align: center;
+}
+footer ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.logo{
+    margin: 15px 0 0 0; 
+    height: 20px;
+    width: 20px;
+}
+
+/* Responsive Desgning */
+
+@media screen and (max-width: 720px) {
+    nav {
+        display: flex;
+        justify-content: start;
+    }
+    nav ul{
+        display: none;
+    }
+    .hambg{
+        margin-left: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .line_1{
+        text-align: center;
+    }
+    .image_2{
+        width: 300px;
+        height: 300px;
+    }
+    .image_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+}

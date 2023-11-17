@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Album</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #a3eaa2; */
+    font-family: 'Abril Fatface', cursive;
+}
+.main_heading{
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;    
+}
+.pagelink_container{
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0px;
+    background-color: #1234dddd;
+    
+}
+.pagelink{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+.pagelink:hover{
+    text-decoration: underline;
+    color: #ffffff;
+    background-color: #000000;
+}
+.pagelink:active{
+    color: #ffe4c4;
+    text-decoration: underline;
+}
+/* Main Album Starts */
+.album{
+    margin: 10px;
+    padding: 5px;
+    gap: 5px;
+    border-width: 10px;
+    border-style: groove;
+    background: radial-gradient( #ffffff , #00ffee, #ffffff, #ffffff);
+    border-color: #1234ddDD;
+    height:700px;
+    display: grid;
+    grid-template-columns: .4fr .7fr .7fr;
+    /* grid-template-rows: repeat(3,1fr); */
+}
+.images{
+    overflow: hidden;
+    border: 5px groove #000000;
+}
+.image1{
+    /* Box as main container */
+    gap: 5px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* Box as a grid Item */
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* background-color: rgb(189, 1, 1); */
+}
+.image2{
+    background:url(https://i.pinimg.com/736x/66/d9/bd/66d9bddd1cdf54bed0fa65a9204e65f7--facebook-banner-covers-facebook.jpg);
+}
+.image3{
+    background: url(https://www.shutterstock.com/image-illustration/tropical-luxury-exotic-seamless-pattern-600w-1975048358.jpg);
+}
+.image4{
+    background: url(https://www.shutterstock.com/image-vector/luxury-gold-nature-green-background-600w-1711748359.jpg);
+}
+.image5{
+    background: url(https://www.shutterstock.com/image-illustration/3d-illustration-wooden-triangles-on-600w-1809494173.jpg);
+}
+.image6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background:url(http://www.goodmorningimagesdownload.com/wp-content/uploads/2020/11/Facebook-Profile-Images-40.jpg);
+}
+.image7{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Innsbruck_at_blue_hour.jpg/1200px-Innsbruck_at_blue_hour.jpg?20190421223427);
+    overflow: hidden;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+}
+.image8{
+    background: url(https://t3.ftcdn.net/jpg/05/04/21/08/360_F_504210856_atjaINEICHOThP14bNnCFq2LNXqu1Plx.jpg);
+}
+.image9{
+    background: url(https://www.shutterstock.com/image-illustration/triangle-solid-black-golden-illustration-600w-1862937556.jpg);
+}
+/* Insider Images */
+.image{
+    border: 5px groove #000000;
+    overflow: hidden;
+}
+.img1_1{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYU5gHEh_ICyuJb1BS2rI52PXP-QKGVb86Uw&usqp=CAU);
+}
+.img1_2{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShbNAoqMNzv1dafcjMjJg-FGwP9ngrKa-_mw&usqp=CAU);
+}
+.img1_3{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvPWu1F94CP5Aafhhi0R6wvqzcV9GzjS1waA&usqp=CAU);
+}
+    </style>
+    <link rel="stylesheet" href="./albumstyle.css">
+</head>
+<body>
+    <header class="topline">
+        <h1 class="main_heading">My Photo Album</h1>
+    </header>
+    <nav class="pagelink_container">
+        <a href="#" class="pagelink">Home</a>
+        <a href="#"class="pagelink">Discover</a>
+        <a href="#" class="pagelink">About</a>
+        <a href="#" class="pagelink">Contact</a>    
+    </nav>
+    <main class="album">
+        <div class="images image1">
+            <div class="image img1_1"></div>
+            <div class="image img1_2"></div>
+            <div class="image img1_3"></div>
+        </div>
+        <div class="images image2"></div>
+        <div class="images image3"></div>
+        <div class="images image4"></div>
+        <div class="images image5"></div>
+        <div class="images image6"></div>
+        <div class="images image7"></div>
+        <div class="images image8"></div>
+        <div class="images image9"></div>
+    </main>
+</body>
+</html>
